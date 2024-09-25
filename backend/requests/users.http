@@ -14,4 +14,13 @@ Content-Type: application/json
 
 ###
 
-GET {{baseUrl}}/
+POST {{baseUrl}}/api/users/register-admin
+Content-Type: application/json
+ 
+{
+    "name": "Petro",
+    "surname": "Sota",
+    "email": "petrosota@email.com",
+    "password":"petro123",
+    "role":"admin"
+}

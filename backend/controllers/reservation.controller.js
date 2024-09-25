@@ -19,13 +19,3 @@ export const createReservation = async (req, res) => {
     res.status(500).json({ message: "Errore del server", error: err.message });
   }
 };
-
-// Recupera tutte le prenotazioni (admin)
-export const getAllReservations = async (req, res) => {
-  try {
-    const reservations = await Reservation.find();
-    res.status(200).json(reservations);
-  } catch (err) {
-    res.status(500).json({ message: "Errore nel recupero delle prenotazioni", error: err.message });
-  }
-};

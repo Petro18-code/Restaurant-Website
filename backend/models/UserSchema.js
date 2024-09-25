@@ -18,14 +18,16 @@ const UserSchema = new Schema(
     },
     password: {
       type: String,
-      required: function () {
-        return !this.googleid; // Se googleid è presente, la password non è obbligatoria
-      },
+      required: true,
     },
     role: {
       type: String,
       default: "user",
       enum: ["user", "admin"],
+    },
+    isAdmin: {
+      type: Boolean,
+      default: false,
     },
     date: {
       type: Date,
