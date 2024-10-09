@@ -1,0 +1,10 @@
+@baseUrl=http://localhost:5000/api/review/66fc425d6ea6a85359ecf452/review
+###
+POST {{baseUrl}}
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmZjNDI1ZDZlYTZhODUzNTllY2Y0NTIiLCJpYXQiOjE3Mjc4MDk0NDksImV4cCI6MTcyNzg1MjY0OX0.3SfW9brh9GZVYGCiSPnYiLnNhri81Yoo3TRx1kOV6cY
+
+    {
+        "rating": 5,
+        "comment": "Questo è un commento"
+    }

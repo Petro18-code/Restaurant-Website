@@ -1,7 +1,7 @@
 @baseUrl=http://localhost:5000
 
 ###
-POST {{baseUrl}}/auth/register
+POST {{baseUrl}}/api/auth/register
 Content-Type: application/json
  
 {
@@ -21,6 +21,22 @@ Content-Type: application/json
     "name": "Petro",
     "surname": "Sota",
     "email": "petrosota@email.com",
-    "password":"petro123",
+    "password":"",
     "role":"admin"
 }
+
+###
+
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+ 
+{
+    "email": "ciao@gmail.com",
+    "password":"ciaoo",
+    "role":"user"
+}
+
+###
+
+GET {{baseUrl}}/api/auth/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmZiY2I3ZWIxNTY2Y2Q0OWRkYWQxNGQiLCJpYXQiOjE3Mjc5ODA1NjQsImV4cCI6MTcyODAyMzc2NH0.xbDqwCSKFkUTwwPj-pg54AJfNNK5LRXg1h5zpXJFt14

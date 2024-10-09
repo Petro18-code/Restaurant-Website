@@ -1,22 +1,28 @@
-import React from 'react';
-
-import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
-import { Navbar } from './components';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Login from "./pages/Login.jsx";
+import Register from "./pages/Register.jsx";
+import { Home } from "./pages/Home.jsx";
+import Review from "./pages/Review.jsx"
+import Reservation from "./pages/Reservation/Reservation.jsx";
+import ReviewSection from "./container/Review/ReviewSection.jsx";
+import AdminDashboard from "./pages/AdminDashboard.jsx";
+import Menu from "./pages/Menu/Menu.jsx";
 
 const App = () => (
-  <div>
-    <Navbar />
-    <Header />
-    <AboutUs />
-    <SpecialMenu />
-    <Chef />
-    <Intro />
-    {/* <Laurels /> */}
-    <Gallery />
-    <FindUs />
-    <Footer />
-  </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/review" element={<Review />} />
+        <Route path="/reviews" element={<ReviewSection />} />
+        <Route path="/reservation" element={<Reservation />} />
+        <Route path="/admin" element={<AdminDashboard/>} />
+        <Route path="/menu" element={<Menu/>}/>
+      </Routes>
+    </BrowserRouter>
 );
 
 export default App;

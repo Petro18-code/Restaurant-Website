@@ -1,8 +1,11 @@
 import express from "express";
-import { createReservation } from "../controllers/reservation.controller.js";
+import { createReservation, getUserReservations } from "../controllers/reservation.controller.js";
+import authentication from "../middleware/authentication.js";
 
 const router = express.Router();
 
-router.post("/reservation", createReservation);
+router.post("/", authentication, createReservation);
+
+router.get("/my-reservations", authentication, getUserReservations)
 
 export default router;

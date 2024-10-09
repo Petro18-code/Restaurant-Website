@@ -11,16 +11,15 @@ const Footer = () => (
     <Newsletter />
 
     <div className="app__footer-links">
-      <div className="app__footer-links_contact">
-        <h1 className="app__footer-headtext">Contact Us</h1>
-        <p className="p__opensans">Largo Corrado Ricci, 37A, 00184, Roma (RM), Italy</p>
-        <p className="p__opensans">+39 351-729-5832</p>
-        <p className="p__opensans">+39 153-279-5842</p>
+      <div className="app__footer-links_work">
+        <h1 className="app__footer-headtext">Working Hours</h1>
+        <p className="p__opensans">Monday-Sunday:</p>
+        <p className="p__opensans">09:00 am - 00:00 am</p>
       </div>
 
       <div className="app__footer-links_logo">
-        <img src={images.gericht} alt="footer_logo" />
-        <p className="p__opensans">&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p>
+        <img src={images.giardino} alt="footer_logo" />
+        <p className="p__opensans">&quot;Dove Si Mangia In Allegria.&quot;</p>
         <img src={images.spoon} className="spoon__img" style={{ marginTop: 15 }} />
         <div className="app__footer-links_icons">
           <FiFacebook />
@@ -29,10 +28,12 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="app__footer-links_work">
-        <h1 className="app__footer-headtext">Working Hours</h1>
-        <p className="p__opensans">Monday-Sunday:</p>
-        <p className="p__opensans">09:00 am - 00:00 am</p>
+
+      <div className="app__footer-links_contact">
+        <h1 className="app__footer-headtext">Contact Us</h1>
+        <p className="p__opensans">Largo Corrado Ricci, 37A, 00184, Roma (RM), Italy</p>
+        <p className="p__opensans">+39 351-729-5832</p>
+        <p className="p__opensans">+39 153-279-5842</p>
       </div>
     </div>
 

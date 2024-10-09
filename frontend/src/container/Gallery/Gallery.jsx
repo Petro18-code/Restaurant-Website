@@ -36,7 +36,7 @@ const Gallery = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
           quidem.'
         </p>
-        <button className="custom__button">View More</button>
+        <a href="https://www.instagram.com/il_giardino_ai_fori_" className="custom__button">View More</a>
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>

@@ -1,8 +1,11 @@
 import express from "express";
-import { getReservations } from "../controllers/admin.controller.js";
+import { deleteReservation, getReservations } from "../controllers/admin.controller.js";
 import { isAdmin } from "../middleware/isAdmin.js";
+import authentication from "../middleware/authentication.js";
 const router = express.Router();
 
-router.get("/reservations", isAdmin, getReservations);
+router.get("/all-reservations", authentication, isAdmin, getReservations);
+
+router.delete("/delete-reservation/:id", authentication, isAdmin, deleteReservation);
 
 export default router;
