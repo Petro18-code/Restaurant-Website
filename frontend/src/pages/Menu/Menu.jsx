@@ -20,18 +20,17 @@ const MenuSection = ({ title, items }) => (
 const Menu = () => {
   return (
     <div className="menu bg-black">
-      <MenuSection title="White Wines" items={data.whiteWines} />
-      <MenuSection title="Pasta" items={data.pasta} />
-      <MenuSection title="Red Wines" items={data.redWines} />
-      <MenuSection title="Cocktails" items={data.cocktails} />
-      <MenuSection title="Drinks" items={data.drinks} />
-      <MenuSection title="Pasta" items={data.pasta} />
       <MenuSection title="Starters" items={data.starters} />
-      <MenuSection title="Fish" items={data.fish} />
-      <MenuSection title="Meat" items={data.meat} />
+      <MenuSection title="Pasta" items={data.pasta} />
       <MenuSection title="Pizza" items={data.pizza} />
       <MenuSection title="Side Dishes" items={data.sideDishes} />
+      <MenuSection title="Fish" items={data.fish} />
+      <MenuSection title="Meat" items={data.meat} />
       <MenuSection title="Desserts" items={data.desserts} />
+      <MenuSection title="Drinks" items={data.drinks} />
+      <MenuSection title="Cocktails" items={data.cocktails} />
+      <MenuSection title="White Wines" items={data.whiteWines} />
+      <MenuSection title="Red Wines" items={data.redWines} />
     </div>
   );
 };
