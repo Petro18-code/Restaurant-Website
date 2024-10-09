@@ -39,4 +39,4 @@ Content-Type: application/json
 ###
 
 GET {{baseUrl}}/api/auth/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmZiY2I3ZWIxNTY2Y2Q0OWRkYWQxNGQiLCJpYXQiOjE3Mjc5ODA1NjQsImV4cCI6MTcyODAyMzc2NH0.xbDqwCSKFkUTwwPj-pg54AJfNNK5LRXg1h5zpXJFt14
+Authorization: Bearer your_token
