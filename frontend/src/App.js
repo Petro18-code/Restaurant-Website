@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import Login from "./pages/Login.jsx";
-import Register from "./pages/Register.jsx";
+import Login from "./pages/Login/Login.jsx";
+import Register from "./pages/Register/Register.jsx";
 import { Home } from "./pages/Home.jsx";
-import Review from "./pages/Review.jsx"
+import Review from "./pages/Review/Review.jsx"
 import Reservation from "./pages/Reservation/Reservation.jsx";
 import ReviewSection from "./container/Review/ReviewSection.jsx";
-import AdminDashboard from "./pages/AdminDashboard.jsx";
+import AdminDashboard from "./pages/AdminDashboard/AdminDashboard.jsx";
 import Menu from "./pages/Menu/Menu.jsx";
 
 const App = () => (

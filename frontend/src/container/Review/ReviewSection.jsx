@@ -5,7 +5,6 @@ import './ReviewSection.css';
 const ReviewSection = () => {
   const [reviews, setReviews] = useState([]);
 
-  // Fetch reviews from backend
   useEffect(() => {
     const fetchReviews = async () => {
       try {

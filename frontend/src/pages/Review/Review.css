@@ -1,0 +1,101 @@
+.review__container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--color-black);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  color: var(--color-white);
+  font-family: var(--font-base);
+}
+
+.review__header {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color-golden);
+  margin-bottom: 2rem;
+  font-family: var(--font-cormorant);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.review__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.review__rating {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.review__star {
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: grey;
+  transition: color 0.3s ease;
+}
+
+.review__star:hover,
+.review__star:focus {
+  color: var(--color-golden);
+}
+
+.review__star-selected {
+  color: var(--color-golden);
+}
+
+.review__textarea {
+  resize: none;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--color-grey);
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
+}
+
+.review__textarea:focus {
+  border-color: var(--color-golden);
+}
+
+.review__button {
+  align-self: center;
+  padding: 0.8rem 3rem;
+  font-size: 1.2rem;
+  background-color: var(--color-golden);
+  border: none;
+  border-radius: 5px;
+  color: var(--color-black);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: var(--font-cormorant);
+}
+
+.review__button:hover {
+  background-color: #e0c47c;
+}
+
+@media screen and (max-width: 768px) {
+  .review__container {
+    padding: 1.5rem;
+  }
+
+  .review__header {
+    font-size: 2rem;
+  }
+
+  .review__star {
+    font-size: 2rem;
+  }
+
+  .review__button {
+    font-size: 1rem;
+  }
+}

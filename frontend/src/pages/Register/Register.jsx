@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Form, Button, Container } from "react-bootstrap";
+import "./Register.css";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -63,9 +64,9 @@ const Register = () => {
   };
 
   return (
-    <Container fluid className="d-flex text-center flex-column align-items-center justify-content-center vh-100 bg-black">
-      <h2 className="p__cormorant">Register</h2>
-      <Form onSubmit={handleSubmit}>
+    <Container fluid className="register-container">
+      <h2 className="register-title">Register</h2>
+      <Form onSubmit={handleSubmit} className="register-form">
         <Form.Group className="mb-3" controlId="name">
           <Form.Label>Name</Form.Label>
           <Form.Control
@@ -75,6 +76,7 @@ const Register = () => {
             onChange={handleChange}
             placeholder="Enter your name"
             required
+            className="form-input"
           />
         </Form.Group>
 
@@ -87,6 +89,7 @@ const Register = () => {
             onChange={handleChange}
             placeholder="Enter your surname"
             required
+            className="form-input"
           />
         </Form.Group>
 
@@ -99,6 +102,7 @@ const Register = () => {
             onChange={handleChange}
             placeholder="Enter your email"
             required
+            className="form-input"
           />
         </Form.Group>
 
@@ -111,6 +115,7 @@ const Register = () => {
             onChange={handleChange}
             placeholder="Enter your password"
             required
+            className="form-input"
           />
         </Form.Group>
 
@@ -123,10 +128,11 @@ const Register = () => {
             onChange={handleChange}
             placeholder="Confirm your password"
             required
+            className="form-input"
           />
         </Form.Group>
 
-        <Button className="custom__button" type="submit">
+        <Button className="custom__buttons" type="submit">
           Register
         </Button>
       </Form>

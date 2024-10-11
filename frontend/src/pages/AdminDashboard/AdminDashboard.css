@@ -1,0 +1,78 @@
+.admin__dashboard-container {
+  background-color: var(--color-black);
+  padding: 2rem;
+  border-radius: 10px;
+  color: var(--color-white);
+  font-family: var(--font-alt);
+}
+
+.admin__dashboard-header {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color-golden);
+  margin-bottom: 2rem;
+  font-family: var(--font-alt);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.table {
+  background-color: var(--color-black);
+  border: 1px solid var(--color-golden);
+}
+
+.table thead th {
+  background-color: var(--color-golden);
+  color: var(--color-black);
+  font-family: var(--font-alt);
+}
+
+.table tbody tr {
+  color: var(--color-white);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(255, 215, 0, 0.2); 
+}
+
+.table tbody td {
+  color: var(--color-grey);
+}
+
+.btn-danger {
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+}
+
+.btn-danger:hover {
+  background-color: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--color-golden);
+  color: var(--color-black);
+  font-family: var(--font-alt);
+}
+
+.nav-tabs .nav-link {
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  border: none;
+  font-family: var(--font-alt);
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: var(--color-golden);
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 768px) {
+  .admin__dashboard-header {
+    font-size: 2rem;
+  }
+
+  .table {
+    font-size: 0.9rem;
+  }
+}

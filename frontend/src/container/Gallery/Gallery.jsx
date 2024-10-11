@@ -33,8 +33,7 @@ const Gallery = () => {
         <SubHeading title="Instagram" />
         <h1 className="headtext__cormorant">Photo Gallery</h1>
         <p className="p__opensans" style={{ color: "#AAA", marginTop: "2rem" }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-          quidem.'
+          Qui trovate le nostre raccolte di immagini per la cucina.'
         </p>
         <a href="https://www.instagram.com/il_giardino_ai_fori_" className="custom__button">View More</a>
       </div>
