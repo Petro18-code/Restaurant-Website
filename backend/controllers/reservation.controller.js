@@ -8,7 +8,7 @@ export const createReservation = async (req, res) => {
     const existingReservations = await Reservation.find({ date, time });
     const totalGuests = existingReservations.reduce((acc, curr) => acc + curr.guests, 0);
 
-    const maxGuestsPerTimeSlot = 20;
+    const maxGuestsPerTimeSlot = 5;
 
     if (totalGuests + guests > maxGuestsPerTimeSlot) {
       return res.status(400).json({ error: "No available tables at the selected time" });
